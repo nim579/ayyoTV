@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mvideo Demo</title>
+        <title>Ayyo SmartTV демо</title>
         <meta charset="utf-8">
+        <meta property="og:type"                content="website"/>
+        <meta property="og:title"               content="Ayyo SmartTV демо"/>
+        <meta property="og:url"                 content="http://dev.nim579.ru/ayyoTV/"/>
+        <meta property="og:image"               content="http://dev.nim579.ru/ayyoTV/fbimg.png" />
+        <meta property="og:image:type"          content="image/png">
+        <meta property="og:image:width"         content="200">
+        <meta property="og:image:height"        content="200">
+        <meta property="og:image"               content="http://dev.nim579.ru/ayyoTV/fbimg-full.png" />
+        <meta property="og:image:type"          content="image/png">
+        <meta property="og:image:width"         content="398">
+        <meta property="og:image:height"        content="208">
         <script src="http://yandex.st/jquery/1.9.1/jquery.min.js"></script>
         <script>
             $(function(){
@@ -12,7 +23,6 @@
                 });
                 $(window).bind('click', function(e){
                     $('#app').blur().focus();
-                    console.log(e, $(e.target).hasClass('legend'), $(e.target).parents('.legend').length)
                     if(!($(e.target).hasClass('legend') || $(e.target).parents('.legend').length)){
                         $('.legend').hide();
                         $('.helper').removeClass('mLegend');
